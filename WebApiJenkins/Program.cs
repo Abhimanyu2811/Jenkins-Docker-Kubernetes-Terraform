@@ -13,6 +13,11 @@ namespace WebApiJenkins
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.WebHost.ConfigureKestrel(serverOptions =>
+            {
+                serverOptions.ListenAnyIP(8080); // Not just localhost!
+            });
+
 
             var app = builder.Build();
 
