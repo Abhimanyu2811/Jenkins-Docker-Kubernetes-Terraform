@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        ACR_NAME = 'acrrathore01'
-        AZURE_CREDENTIALS_ID = 'jenkins-pipeline-sp'
+        ACR_NAME = 'acrabhimanyu12'
+        AZURE_CREDENTIALS_ID = 'jenkins-pipeline-asp'
         ACR_LOGIN_SERVER = "${ACR_NAME}.azurecr.io"
         IMAGE_NAME = 'webapidocker1'
         IMAGE_TAG = 'latest'
         RESOURCE_GROUP = 'myResourceGroup'
-        AKS_CLUSTER = 'myAKSCluster'
+        AKS_CLUSTER = 'myAKSCluster011'
         TF_WORKING_DIR = '.'
     }
 
